@@ -1,30 +1,31 @@
 import React from "react";
 import { styled } from "styletron-react";
-import Rows from "./Rows";
+import TextRows from "./TextRows";
 import ItemsColumn from "./ItemsColumn";
 
-const StartScreenCanvas = styled("div", () => ({
+const StartScreenContainer = styled("div", () => ({
 	display: "flex",
 	flexFlow: "row nowrap",
 	alignItems: "center",
 	width: "65.9%",
 	height: "100vh",
-	backgroundColor: "white",
-	fontFamily: "CCComicrazy-Regular",
-	fontSize: "38px",
-	fontWeight: "bold"
+	backgroundColor: "white"
+}));
+
+const RowsContainer = styled("div", () => ({
+	display: "flex",
+	flexFlow: "column wrap",
+	width: "100%"
 }));
 
 const StartScreen = () => {
 	return (
-		<StartScreenCanvas>
-			<div style={{ display: "flex", flexFlow: "column wrap" }}>
-				<div>hello</div>
-				<Rows />
-				<div>hello</div>
-			</div>
+		<StartScreenContainer>
+			<RowsContainer>
+				<TextRows />
+			</RowsContainer>
 			<ItemsColumn />
-		</StartScreenCanvas>
+		</StartScreenContainer>
 	);
 };
 

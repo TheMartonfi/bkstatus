@@ -4,16 +4,10 @@ import banjo from "assets/7ef.gif";
 import jiggy from "assets/80d.gif";
 import tooty from "assets/815.gif";
 
-const RowsContainer = styled("div", () => ({
-	display: "flex",
-	flexFlow: "column nowrap",
-	width: "100%"
-}));
-
-const RowContainer = styled("div", () => ({
+const TextRowContainer = styled("div", () => ({
 	display: "flex",
 	alignItems: "center",
-	width: "80%",
+	width: "90%",
 	height: "95px",
 	color: "white",
 	margin: "0px 0 32px 50px",
@@ -22,7 +16,10 @@ const RowContainer = styled("div", () => ({
 }));
 
 const TextContainer = styled("div", () => ({
-	marginTop: "9px"
+	marginTop: "10px",
+	fontFamily: "CCComicrazy-Regular",
+	fontSize: "38px",
+	fontWeight: "bold"
 }));
 
 const StyledImg = styled("img", () => ({
@@ -39,14 +36,14 @@ const rows = [
 
 const Rows = () => {
 	return (
-		<RowsContainer>
+		<>
 			{rows.map(({ icon: { src, alt }, text }, index) => (
-				<RowContainer key={index}>
-					<StyledImg key={src} src={src} alt={alt} />
-					<TextContainer key={text}>{text}</TextContainer>
-				</RowContainer>
+				<TextRowContainer key={index}>
+					<StyledImg src={src} alt={alt} />
+					<TextContainer>{text}</TextContainer>
+				</TextRowContainer>
 			))}
-		</RowsContainer>
+		</>
 	);
 };
 

@@ -10,7 +10,7 @@ import mumboToken from "assets/41a.gif";
 const ItemsContainer = styled("div", () => ({
 	display: "flex",
 	flexDirection: "column",
-	margin: "0 150px 0 -120px"
+	margin: "0 150px 0 auto"
 }));
 
 const StyledImg = styled("img", () => ({
