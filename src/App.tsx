@@ -1,5 +1,6 @@
 import React from "react";
 import { styled } from "styletron-react";
+import StartScreen from "./components/StartScreen";
 
 const Container = styled("div", () => ({
 	display: "flex",
@@ -7,16 +8,10 @@ const Container = styled("div", () => ({
 	backgroundColor: "black"
 }));
 
-const StartScreenCanvas = styled("div", () => ({
-	width: "65.9%",
-	height: "100vh",
-	backgroundColor: "white"
-}));
-
 const App = () => {
 	return (
 		<Container>
-			<StartScreenCanvas></StartScreenCanvas>
+			<StartScreen />
 		</Container>
 	);
 };
