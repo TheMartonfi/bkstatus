@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styletron-react";
-import StartScreen from "./components/StartScreen";
+import StartScreen from "components/StartScreen";
 
 const Container = styled("div", () => ({
 	display: "flex",

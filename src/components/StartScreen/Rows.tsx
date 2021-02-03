@@ -1,8 +1,8 @@
 import React from "react";
 import { styled } from "styletron-react";
-import banjo from "../../assets/7ef.gif";
-import jiggy from "../../assets/80d.gif";
-import tooty from "../../assets/815.gif";
+import banjo from "assets/7ef.gif";
+import jiggy from "assets/80d.gif";
+import tooty from "assets/815.gif";
 
 const RowsContainer = styled("div", () => ({
 	display: "flex",

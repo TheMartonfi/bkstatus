@@ -1,11 +1,11 @@
 import React from "react";
 import { styled } from "styletron-react";
-import musicalNote from "../../assets/81b.gif";
-import blueEgg from "../../assets/36d.gif";
-import redFeather from "../../assets/580.gif";
-import goldFeather from "../../assets/6d1.gif";
-import jiggy from "../../assets/80d.gif";
-import mumboToken from "../../assets/41a.gif";
+import musicalNote from "assets/81b.gif";
+import blueEgg from "assets/36d.gif";
+import redFeather from "assets/580.gif";
+import goldFeather from "assets/6d1.gif";
+import jiggy from "assets/80d.gif";
+import mumboToken from "assets/41a.gif";
 
 const ItemsContainer = styled("div", () => ({
 	display: "flex",

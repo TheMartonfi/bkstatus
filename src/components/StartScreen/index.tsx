@@ -18,7 +18,11 @@ const StartScreenCanvas = styled("div", () => ({
 const StartScreen = () => {
 	return (
 		<StartScreenCanvas>
-			<Rows />
+			<div style={{ display: "flex", flexFlow: "column wrap" }}>
+				<div>hello</div>
+				<Rows />
+				<div>hello</div>
+			</div>
 			<ItemsColumn />
 		</StartScreenCanvas>
 	);
