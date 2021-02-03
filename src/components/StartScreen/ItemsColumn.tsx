@@ -31,8 +31,8 @@ const items = [
 const ItemsColumn = () => {
 	return (
 		<ItemsContainer>
-			{items.map(({ src, alt, style }) => (
-				<StyledImg src={src} alt={alt} style={style} />
+			{items.map(({ src, alt, style }, index) => (
+				<StyledImg key={index} src={src} alt={alt} style={style} />
 			))}
 		</ItemsContainer>
 	);

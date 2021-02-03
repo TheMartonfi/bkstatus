@@ -37,17 +37,17 @@ const rows = [
 	{ icon: { src: tooty, alt: "Tooty" }, text: "SAVE AND QUIT" }
 ];
 
-const Row = () => {
+const Rows = () => {
 	return (
 		<RowsContainer>
-			{rows.map(({ icon: { src, alt }, text }) => (
-				<RowContainer>
-					<StyledImg src={src} alt={alt} />
-					<TextContainer>{text}</TextContainer>
+			{rows.map(({ icon: { src, alt }, text }, index) => (
+				<RowContainer key={index}>
+					<StyledImg key={src} src={src} alt={alt} />
+					<TextContainer key={text}>{text}</TextContainer>
 				</RowContainer>
 			))}
 		</RowsContainer>
 	);
 };
 
-export default Row;
+export default Rows;
