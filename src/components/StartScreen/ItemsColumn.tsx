@@ -20,18 +20,21 @@ const StyledImg = styled("img", () => ({
 }));
 
 const items = [
-	{ src: musicalNote, alt: "Musical note" },
-	{ src: blueEgg, alt: "Blue egg" },
-	{ src: redFeather, alt: "Red feather" },
-	{ src: goldFeather, alt: "Gold feather" },
-	{ src: jiggy, alt: "Jiggy" },
-	{ src: mumboToken, alt: "Mumbo token", style: { marginLeft: "80px" } }
+	{ icon: { src: musicalNote, alt: "Musical note" } },
+	{ icon: { src: blueEgg, alt: "Blue egg" } },
+	{ icon: { src: redFeather, alt: "Red feather" } },
+	{ icon: { src: goldFeather, alt: "Gold feather" } },
+	{ icon: { src: jiggy, alt: "Jiggy" } },
+	{
+		icon: { src: mumboToken, alt: "Mumbo token" },
+		style: { marginLeft: "80px" }
+	}
 ];
 
 const ItemsColumn = () => {
 	return (
 		<ItemsContainer>
-			{items.map(({ src, alt, style }, index) => (
+			{items.map(({ icon: { src, alt }, style }, index) => (
 				<StyledImg key={index} src={src} alt={alt} style={style} />
 			))}
 		</ItemsContainer>
