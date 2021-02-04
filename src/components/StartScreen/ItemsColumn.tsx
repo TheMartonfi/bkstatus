@@ -60,8 +60,8 @@ const ItemsColumn = () => {
 		<ItemsContainer>
 			{items.map(
 				({ icon: { src, alt }, text, iconStyle, textStyle }, index) => (
-					<ItemContainer>
-						<StyledImg key={index} src={src} alt={alt} style={iconStyle} />
+					<ItemContainer key={index}>
+						<StyledImg src={src} alt={alt} style={iconStyle} />
 						<div style={textStyle}>{text}</div>
 					</ItemContainer>
 				)
