@@ -7,7 +7,7 @@ import tooty from "assets/815.gif";
 const TextRowContainer = styled("div", () => ({
 	display: "flex",
 	alignItems: "center",
-	width: "90%",
+	width: "93%",
 	height: "95px",
 	color: "white",
 	margin: "0px 0 32px 50px",
@@ -15,11 +15,12 @@ const TextRowContainer = styled("div", () => ({
 	backgroundColor: "rgba(0, 0, 0, .6)"
 }));
 
-const TextContainer = styled("div", () => ({
+const StyledText = styled("div", () => ({
 	marginTop: "10px",
 	fontFamily: "CCComicrazy-Regular",
 	fontSize: "38px",
-	fontWeight: "bold"
+	fontWeight: "bold",
+	textShadow: "none"
 }));
 
 const StyledImg = styled("img", () => ({
@@ -40,7 +41,7 @@ const Rows = () => {
 			{rows.map(({ icon: { src, alt }, text }, index) => (
 				<TextRowContainer key={index}>
 					<StyledImg src={src} alt={alt} />
-					<TextContainer>{text}</TextContainer>
+					<StyledText>{text}</StyledText>
 				</TextRowContainer>
 			))}
 		</>
