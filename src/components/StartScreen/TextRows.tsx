@@ -12,7 +12,13 @@ const TextRowContainer = styled("div", () => ({
 	color: "white",
 	margin: "0px 0 32px 50px",
 	borderRadius: "30px",
-	backgroundColor: "rgba(0, 0, 0, .6)"
+	backgroundColor: "rgba(0, 0, 0, .6)",
+	":hover": {
+		cursor: "pointer"
+	},
+	":hover div": {
+		color: "snow"
+	}
 }));
 
 const StyledText = styled("div", () => ({
@@ -20,7 +26,8 @@ const StyledText = styled("div", () => ({
 	fontFamily: "CCComicrazy-Regular",
 	fontSize: "38px",
 	fontWeight: "bold",
-	textShadow: "none"
+	textShadow: "none",
+	color: "rgba(255, 250, 250, .7)"
 }));
 
 const StyledImg = styled("img", () => ({
