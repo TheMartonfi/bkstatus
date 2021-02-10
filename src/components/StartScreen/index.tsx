@@ -5,7 +5,8 @@ import ItemsColumn from "./ItemsColumn";
 
 const StartScreenContainer = styled("div", () => ({
 	display: "flex",
-	flexFlow: "row nowrap",
+	flexWrap: "nowrap",
+	// Change this to flex start to align stuff properly
 	alignItems: "center",
 	width: "65.9%",
 	height: "100vh",
@@ -14,7 +15,7 @@ const StartScreenContainer = styled("div", () => ({
 
 const RowsContainer = styled("div", () => ({
 	display: "flex",
-	flexFlow: "column wrap",
+	flexDirection: "column",
 	width: "100%"
 }));
 

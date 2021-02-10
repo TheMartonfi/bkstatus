@@ -42,7 +42,7 @@ const rows = [
 	{ icon: { src: tooty, alt: "Tooty" }, text: "SAVE AND QUIT" }
 ];
 
-const Rows = () => {
+const TextRows = () => {
 	return (
 		<>
 			{rows.map(({ icon: { src, alt }, text }, index) => (
@@ -55,4 +55,4 @@ const Rows = () => {
 	);
 };
 
-export default Rows;
+export default TextRows;
